@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Matrix Background",
+    "description": "Adds a matrix background to google.com",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/matrix2.png",
+        "48": "/images/matrix2.png",
+        "128": "/images/matrix2.png"
+    },
+    "page_action":{
+        "default_icon": {
+        "16": "/images/matrix.png",
+        "48": "/images/matrix.png",
+        "128": "/images/matrix.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/"],
+        "css": ["main.css"]
+    }]
+
+}
